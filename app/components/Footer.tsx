@@ -4,8 +4,15 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 export default async function Footer() {
+
+
+  // adding a new view to th database using Prisma
   const newVisit = await prisma.visits.create({ data: {} });
+
+  // Fetching the views from th database Prisma
   const visits = await prisma.visits.findMany();
+ 
+  
   return (
     <footer className="footer footer-center  p-3 m-0 bg-slate-700 text-primary-content">
       <aside>

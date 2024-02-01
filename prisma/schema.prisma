@@ -11,6 +11,7 @@ datasource db {
 }
 
 
+// Visits Model
 model Visits {
   id       Int    @id  @default(autoincrement())
   created_at  DateTime @default(now())

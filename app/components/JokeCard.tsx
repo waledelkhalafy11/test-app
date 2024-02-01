@@ -1,4 +1,5 @@
-'use client'
+// this should be a client component to be able to react and be dynamic as much it could be
+'use client' 
 import React from 'react'
 import { useState , useEffect } from 'react';
 
@@ -29,7 +30,8 @@ const JokeCard =  () => {
                                           })
 
 
-// a useEffect hook fetching a new joke at every 
+                                          
+// Fetching a new joke
 
   useEffect(() => {
     fetch('https://api.chucknorris.io/jokes/random?'+ new URLSearchParams({
